@@ -16,21 +16,25 @@
 <body>
 
 <h1>Privacy Policy - RFID PH</h1>
-<p class="updated">Last updated: August 7, 2026</p>
+<p class="updated">Last updated: August 14, 2026</p>
 
-<p>RFID PH ("the app") lets you check toll RFID account balances for Autosweep and Easytrip by entering an account number. This page explains what data the app handles and how.</p>
+<p>RFID PH ("the app") lets you check toll RFID account balances for Autosweep and Easytrip. This page explains what data the app handles and how.</p>
+
+<h2>Connecting your Autosweep/Easytrip login</h2>
+<p>To add an account, RFID PH asks for that provider's own portal username and password - the same ones you use on their website - and signs in on your behalf to look up the balance. We do not have accounts of our own; this is your existing login with Autosweep or Easytrip, entered directly into the app.</p>
+<p>Your password is stored only in your device's secure system keychain (the iOS Keychain, or Android's equivalent encrypted storage) - never in plain text, never in the app's local database, and never synced to iCloud or any cloud backup. It is transmitted only to that provider's own portal, over an encrypted connection, to perform the sign-in - never to us or to any other party. You can disconnect a provider at any time from the Connected Accounts screen in the app, which removes its saved login from your device immediately.</p>
 
 <h2>What the app stores on your device</h2>
-<p>When you add a tracked account, the app stores the following locally on your device only, in a local database that is never uploaded or synced to any server:</p>
+<p>The app stores the following locally on your device only, in a local database that is never uploaded or synced to any server:</p>
 <ul>
-  <li>The nickname you give the account</li>
-  <li>The provider (Autosweep or Easytrip) and the account number you entered</li>
+  <li>The nickname you give each account, and the account number you entered</li>
   <li>The balance history returned each time you check it, kept for up to 1 year per account before older entries are automatically removed</li>
+  <li>Your Autosweep/Easytrip portal username (not the password - see above) for each provider you've connected</li>
 </ul>
-<p>This data stays on your device. Uninstalling the app deletes it permanently. The app has no user accounts, login, or sign-up of any kind - there is nothing tying this data to your identity beyond being stored on your own phone.</p>
+<p>This data stays on your device. Uninstalling the app deletes it permanently, including your saved portal login. The app has no accounts, login, or sign-up of our own - there is nothing tying this data to your identity beyond being stored on your own phone.</p>
 
 <h2>What the app sends over the network</h2>
-<p>To look up a balance, the app sends the provider and account number you entered in order to retrieve your current balance. No account number is ever linked to your name, email, or any other personal identifier by us - the app has no concept of a signed-in user.</p>
+<p>To look up a balance, the app sends the account number you entered, together with the portal login you connected for that provider, directly to that provider's own website in order to sign in and retrieve your current balance. No data is ever linked to your name, email, or any other personal identifier by us - the app has no concept of a signed-in user with us.</p>
 
 <h2>Notifications</h2>
 <p>The app can show a local notification when a tracked balance drops below a threshold. This is generated entirely on your device and does not involve any push notification service or third-party server.</p>
